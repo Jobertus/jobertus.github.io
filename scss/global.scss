@@ -40,20 +40,16 @@
 //   "foundation/components/visibility";
 
 $front_text_color: #f1c40f;
+$landing-page-header-bg: #27ae60;
 
 body{
-	background-color: #ecf0f1;
 	font: 16px "Helvetica Neue";
 	font-weight: lighter;
 }
 
 h2{
 	margin: 10px 0px 10px 0px;
-	text-align: center;
-	font-family: 'Varela Round', sans-serif;
-	font-size: 22px;
 	font-weight: lighter;
-	color: $front_text_color;
 	h3{
 		font-size: 20px;
 	}
@@ -64,17 +60,34 @@ h2{
 
 // Landing page content
 
-.content{
+.main-content{
 	max-width: 900px;
 	margin: auto;
-	height: 1000px;
+	margin-top: 50px;
 }
 
+.top-bar{
+	box-shadow: 0px 5px 0px $topbar-link-bg-hover;
+}
+
+article.post{
+	padding: 20px;
+
+	.content{
+		margin-bottom:20px;
+	}
+}
+
+#map-canvas {
+    height: 300px;
+    margin: 0px;
+    padding: 0px
+  }
 // Landing page header
 
 .landing-page-header{
 	text-align: center;
-	background-color: #27ae60;
+	background-color: $landing-page-header-bg;
 }
 
 .welp{

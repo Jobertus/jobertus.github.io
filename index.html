@@ -6,6 +6,7 @@
     <title>Jobertus</title>
     <link rel="stylesheet" href="css/global.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   </head>
   <body>
     <section class="landing-page-full">
@@ -33,7 +34,7 @@
                 </ul>
               </li>
             </ul>
-
+          
             <ul class="left">
               <li><a href="#">Over ons</a></li>
               <li><a href="#">Takken</a></li>
@@ -43,11 +44,52 @@
           </section>
         </nav>
         </div>
-        <section class="content">
-          
-        </section>  
+        
+        <section class="main-content">
+          <article class="post">
+            <h1 class="post-title">Eerste post</h1>
+            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur soluta sapiente repellendus quia dignissimos doloremque, accusamus deleniti voluptas atque earum, est aliquid, reiciendis excepturi dolores maiores explicabo. Aperiam accusantium optio minus dolorum tempore laborum id quo, explicabo dolor quia! Nesciunt rem ipsum, cupiditate nulla saepe! Mollitia itaque quos illo veniam neque aperiam assumenda explicabo sapiente totam doloremque, inventore rerum, deserunt odit iusto corrupti natus sunt reiciendis maiores soluta architecto, quam laboriosam id nihil. Praesentium non atque molestiae, enim soluta. Voluptates quas eius, consequuntur aut deleniti facere nisi itaque quasi animi laborum. Asperiores aliquid tenetur ex minima iusto laborum voluptatum enim ab nemo alias eaque voluptas ratione, facere sunt itaque quia vitae quo magni neque. Numquam quos minus blanditiis similique sapiente libero, dolores, repellendus amet ducimus provident quasi facere sequi explicabo suscipit quidem. Optio ea, earum nostrum. Unde excepturi, repellat ratione porro alias, voluptate repudiandae dolorum sequi tempora accusamus veritatis est.
+            </div>
+
+          </article>
+          <article class="post">
+            <h1 class="post-title">Tweede post</h1>
+            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur soluta sapiente repellendus quia dignissimos doloremque, accusamus deleniti voluptas atque earum, est aliquid, reiciendis excepturi dolores maiores explicabo. Aperiam accusantium optio minus dolorum tempore laborum id quo, explicabo dolor quia! Nesciunt rem ipsum, cupiditate nulla saepe! Mollitia itaque quos illo veniam neque aperiam assumenda explicabo sapiente totam doloremque, inventore rerum, deserunt odit iusto corrupti natus sunt reiciendis maiores soluta architecto, quam laboriosam id nihil. Praesentium non atque molestiae, enim soluta. Voluptates quas eius, consequuntur aut deleniti facere nisi itaque quasi animi laborum. Asperiores aliquid tenetur ex minima iusto laborum voluptatum enim ab nemo alias eaque voluptas ratione, facere sunt itaque quia vitae quo magni neque. Numquam quos minus blanditiis similique sapiente libero, dolores, repellendus amet ducimus provident quasi facere sequi explicabo suscipit quidem. Optio ea, earum nostrum. Unde excepturi, repellat ratione porro alias, voluptate repudiandae dolorum sequi tempora accusamus veritatis est.
+            </div>
+
+          </article>
+        </section>
+        <script>
+        var map;
+        function initialize() {
+          var mapOptions = {
+              center: new google.maps.LatLng(51.282560, 4.486434),
+              zoom: 12,
+              scrollwheel:false,
+              zoomControl:false,
+              panControl:false,
+              rotateControl:false,
+              streetViewControl:false,
+              mapTypeControl:false,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+          map = new google.maps.Map(document.getElementById('map-canvas'),
+              mapOptions);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+        <div id="map-canvas"></div>
+        <section class="main-content">
+        <article class="post">
+            <h1 class="post-title">Ligging</h1>
+            <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur soluta sapiente repellendus quia dignissimos doloremque, accusamus deleniti voluptas atque earum, est aliquid, reiciendis excepturi dolores maiores explicabo. Aperiam accusantium optio minus dolorum tempore laborum id quo, explicabo dolor quia! Nesciunt rem ipsum, cupiditate nulla saepe! Mollitia itaque quos illo veniam neque aperiam assumenda explicabo sapiente totam doloremque, inventore rerum, deserunt odit iusto corrupti natus sunt reiciendis maiores soluta architecto, quam laboriosam id nihil. Praesentium non atque molestiae, enim soluta. Voluptates quas eius, consequuntur aut deleniti facere nisi itaque quasi animi laborum. Asperiores aliquid tenetur ex minima iusto laborum voluptatum enim ab nemo alias eaque voluptas ratione, facere sunt itaque quia vitae quo magni neque. Numquam quos minus blanditiis similique sapiente libero, dolores, repellendus amet ducimus provident quasi facere sequi explicabo suscipit quidem. Optio ea, earum nostrum. Unde excepturi, repellat ratione porro alias, voluptate repudiandae dolorum sequi tempora accusamus veritatis est.
+            </div>
+          </article>
+          </section>
       </section>
     <a href="https://github.com/Jobertus/jobertus.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
     <script src="js/build/global.min.js"></script>
+    <!-- At the bottom of your page but inside of the body tag -->
+    
   </body>
 </html>
