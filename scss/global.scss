@@ -1,0 +1,253 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+$front_text_color: #f1c40f;
+
+body{
+	background-color: #ecf0f1;
+	font: 16px "Helvetica Neue";
+	font-weight: lighter;
+}
+
+h2{
+	margin: 10px 0px 10px 0px;
+	text-align: center;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 22px;
+	font-weight: lighter;
+	color: $front_text_color;
+	h3{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 18px;
+	}
+}
+
+// Landing page content
+
+.content{
+	max-width: 900px;
+	margin: auto;
+	height: 1000px;
+}
+
+// Landing page header
+
+.landing-page-header{
+	text-align: center;
+	background-color: #27ae60;
+}
+
+.welp{
+	height: 440px;
+	margin: 0px 0px 30px 0px;
+}
+
+.icon{
+	height: 50px;
+}
+
+@mixin rotate($degrees) {
+     -moz-transform: rotate($degrees);  /* FF3.5+ */
+       -o-transform: rotate($degrees);  /* Opera 10.5 */
+  -webkit-transform: rotate($degrees);  /* Saf3.1+, Chrome */
+      -ms-transform: rotate($degrees);  /* IE9 */
+          transform: rotate($degrees);  
+              zoom: 1;
+}
+
+.fancy_title{
+	margin: 0px 0px -10px 0px;
+	color: hsla(38, 100%, 49%, 0.8);
+	font: 210px "league-gothic";
+	text-align: center;
+		span{
+			-webkit-transition:top 0.3s ease-in;  
+			-moz-transition:top 0.3s ease-in;  
+			-o-transition:top 0.3s ease-in;  
+			transition:top 0.3s ease-in; 
+		}
+		.char1{
+			position: relative;
+			font-size: 250px;
+			font-family: "chunk";
+			&:after {
+			    content: "J";
+			    position: absolute;
+			    left: 10px;
+			    top: -10px;
+			    color: hsla(44, 100%, 49%, 0.9);
+			    letter-spacing: 6px;
+			    @include rotate(-1deg);
+			}
+			&:hover{
+			    top: -20px;
+			}
+		}
+
+		.char2{
+			position: relative;
+		    &:after {
+			    content: "O";
+			    position: absolute;
+			    left: 5px;
+			    top: 15px;
+			    color: hsla(26, 100%, 22%, .10);
+			    letter-spacing: 6px;
+			}
+			&:hover{
+			    top: -5px;
+			}
+		}
+
+		.char3{
+			top: -1px;
+		    position: relative;
+		    font-size: 256px;
+		    &:after{
+			    content: "B";
+			    position: absolute;
+			    left: 15px;
+			    top: -10px;
+			    color: hsla(44, 100%, 60%, .2);
+			    letter-spacing: 6px;
+			    @include rotate(1deg);
+			}
+			&:hover{
+			    top: 5px;
+			}
+		}
+
+		.char4{
+			position: relative;	
+			&:after {
+			    content: "E";
+			    position: absolute;
+			    left: 10px;
+			    top: 12px;
+			    color: hsla(44, 100%, 49%, .9);
+			    letter-spacing: 6px;
+			}
+			&:hover{
+			    top: 10px;
+			}
+		}
+
+		.char5{
+			position: relative;
+			&:after {
+			    content: "R";
+			    position: absolute;
+			    left: 7px;
+			    top: 10px;
+			    color: hsla(44, 100%, 27%, .2);
+			    letter-spacing: 6px;
+			    @include rotate(2deg);
+			}
+			&:hover{
+			    top: 10px;
+			}
+		}
+
+		.char6{
+			top: -13px;
+		    position: relative;
+		    font-size: 256px;
+		    &:after{
+			    content: "T";
+			    position: absolute;
+			    left: 10px;
+			    top: 7px;
+			    color: hsla(39, 100%, 43%, .7);
+			    letter-spacing: 6px;
+			}
+			&:hover{
+			    top: -15px;
+			}
+		}
+
+		.char7 {
+			top: 10px;
+		    position: relative;
+		    &:after{
+			    content: "U";
+			    position: absolute;
+			    left: -5px;
+			    top: 10px;
+			    color: hsla(44, 100%, 20%, .1);
+		    	letter-spacing: 6px;
+			}
+			&:hover{
+			    top: 1px;
+			}
+		}
+
+		.char8{
+			top:20px;
+			position: relative;
+			&:after {
+			    content: "S";
+			    position: absolute;
+			    left: 12px;
+			    top: -15px;
+			    color: hsla(50, 100%, 40%, .4);
+			    letter-spacing: 6px;
+			    @include rotate(-4deg);
+			}
+			&:hover{
+			    top: -20px;
+			}
+		}
+
+}
+
+// Fonts
+
+@font-face {
+font-family: league-gothic;
+src: url("../fonts/LeagueGothic-Regular.otf") format("opentype");
+}
+
+@font-face {
+font-family: chunk;
+src: url("../fonts/Chunkfive.otf") format("opentype");
+}
