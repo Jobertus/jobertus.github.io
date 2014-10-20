@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/global.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/jobertus.js"></script>
   </head>
   <body>
     <section class="landing-page-full">
@@ -59,25 +60,6 @@
 
           </article>
         </section>
-        <script>
-        var map;
-        function initialize() {
-          var mapOptions = {
-              center: new google.maps.LatLng(51.282560, 4.486434),
-              zoom: 12,
-              scrollwheel:false,
-              zoomControl:false,
-              panControl:false,
-              rotateControl:false,
-              streetViewControl:false,
-              mapTypeControl:false,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-          map = new google.maps.Map(document.getElementById('map-canvas'),
-              mapOptions);
-        }
-        google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
         <div id="map-canvas"></div>
         <section class="main-content">
         <article class="post">
