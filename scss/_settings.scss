@@ -1369,7 +1369,7 @@ $topbar-height: 55px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: $font-weight-normal;
+$topbar-title-weight: $font-weight-bold;
 $topbar-title-font-size: rem-calc(20);
 
 // Style the top bar dropdown elements
@@ -1386,7 +1386,7 @@ $topbar-dropdown-link-bg: $topbar-bg-color;
 // $topbar-link-color-hover: $white;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
-// $topbar-link-weight: $font-weight-normal;
+$topbar-link-weight: lighter;
 $topbar-link-font-size: rem-calc(17);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
@@ -1405,7 +1405,7 @@ $topbar-link-bg-active-hover: $topbar-link-bg-active;
 
 // $topbar-dropdown-label-color: $monsoon;
 // $topbar-dropdown-label-text-transform: uppercase;
-// $topbar-dropdown-label-font-weight: $font-weight-bold;
+$topbar-dropdown-label-font-weight: lighter;
 // $topbar-dropdown-label-font-size: rem-calc(10);
 // $topbar-dropdown-label-bg: $oil;
 
