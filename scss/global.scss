@@ -92,7 +92,19 @@ article.post{
 
 .welp{
 	height: 440px;
-	margin: 0px 0px 30px 0px;
+	margin: 0px 0px 30px 40px;
+}
+
+.tent{
+	margin: 0px 0px 80px 40px;
+}
+
+
+#smoke {
+  position: absolute;
+  z-index: -1;
+  left: 22%;
+  top: 0;
 }
 
 .icon{
